@@ -1,6 +1,6 @@
 Summary: A hacked version of wmmixer to make it use ALSA
 Name: wmmixer-alsa
-Version: 0.4
+Version: 0.5
 Release: 1
 Source: http://bohemians.org/~iznogood/wmmixer-alsa/%{name}-%{version}.tar.gz
 URL: http://iznogood.bohemians.org/
