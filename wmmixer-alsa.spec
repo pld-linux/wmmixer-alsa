@@ -7,7 +7,7 @@ URL: http://iznogood.bohemians.org/
 Copyright: GPL
 Group: Applications/Sound
 Packager: Anders Semb Hermansen <ahermans@vf.telia.no>
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A hacked version of wmmixer by Sam Hawker (see README.wmmixer),
