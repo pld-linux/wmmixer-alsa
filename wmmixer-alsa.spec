@@ -3,12 +3,12 @@ Summary(pl):	Wersja wmmixer przerobiona tak, by u¿ywa³a ALSA
 Name:		wmmixer-alsa
 Version:	0.6
 Release:	1
-Source0:	http://iznogood.bohemians.org/wmmixer-alsa/%{name}-%{version}.tar.gz
-URL:		http://iznogood.bohemians.org/
 License:	GPL
 Group:		Applications/Sound
 Group(de):	Applikationen/Laut
 Group(pl):	Aplikacje/D¼wiêk
+Source0:	http://iznogood.bohemians.org/wmmixer-alsa/%{name}-%{version}.tar.gz
+URL:		http://iznogood.bohemians.org/
 BuildRequires:	alsa-lib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -18,8 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A hacked version of wmmixer by Sam Hawker (see README.wmmixer), to
 make it use ALSA (Advanced Linux Sound Architecture) in stead of the
 OSS sound drivers in the linux kernel. To compile and run this
-program, you will need to get alsa-driver and alsa-lib from
-alsa.jcu.cz !
+program, you will need to get alsa-driver and alsa-lib packages.
+
+%description -l pl
+Wersja wmmixera autorstwa Sama Hawkera (patrz README.wmmixer),
+przerobionaa tak, by u¿ywa³a sterowników ALSA zamiast OSS.
 
 %prep
 %setup -q
