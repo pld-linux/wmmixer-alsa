@@ -30,7 +30,7 @@ alsa.jcu.cz !
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/pixmaps}
 install wmmixer-alsa $RPM_BUILD_ROOT%{_bindir}
-install XPM/*.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
+install XPM/{icons,wmmixer}.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 %clean
 rm -rf $RPM_BUILD_ROOT
