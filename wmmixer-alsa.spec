@@ -21,7 +21,7 @@ program, you will need to get alsa-driver and alsa-lib packages.
 
 %description -l pl
 Wersja wmmixera autorstwa Sama Hawkera (patrz README.wmmixer),
-przerobionaa tak, by u¿ywa³a sterowników ALSA zamiast OSS.
+przerobiona tak, by u¿ywa³a sterowników ALSA zamiast OSS.
 
 %prep
 %setup -q
