@@ -1,4 +1,5 @@
 Summary:	A hacked version of wmmixer to make it use ALSA
+Summary(pl):	Wersja wmmixer przerobiona tak, by u¿ywa³a ALSA
 Name:		wmmixer-alsa
 Version:	0.6
 Release:	1
@@ -24,7 +25,7 @@ alsa.jcu.cz !
 %setup -q
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
