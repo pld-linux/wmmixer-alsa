@@ -35,9 +35,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %attr(-,root,root) %doc COPYING README README.xamixer
 %attr(-,root,root) %{_bindir}/wmmixer-alsa
-
-%changelog
-
-* Mon Jan 11 1999 Anders Semb Hermansen <ahermans@vf.telia.no>
-
-- First release
