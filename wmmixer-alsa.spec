@@ -8,6 +8,7 @@ Group:		Applications/Sound
 Source0:	http://iznogood.bohemians.org/wmmixer-alsa/%{name}-%{version}.tar.gz
 URL:		http://iznogood.bohemians.org/
 BuildRequires:	alsa-lib-devel
+BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
