@@ -21,7 +21,7 @@ from alsa.jcu.cz !
 
 %build
 xmkmf
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
