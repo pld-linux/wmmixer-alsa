@@ -5,8 +5,6 @@ Version:	0.6
 Release:	1
 License:	GPL
 Group:		Applications/Sound
-Group(de):	Applikationen/Laut
-Group(pl):	Aplikacje/D¼wiêk
 Source0:	http://iznogood.bohemians.org/wmmixer-alsa/%{name}-%{version}.tar.gz
 URL:		http://iznogood.bohemians.org/
 BuildRequires:	alsa-lib-devel
