@@ -11,7 +11,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	alsa-lib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 A hacked version of wmmixer by Sam Hawker (see README.wmmixer), to
