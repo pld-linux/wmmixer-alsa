@@ -7,8 +7,8 @@ License:	GPL
 Group:		Applications/Sound
 Source0:	http://iznogood.bohemians.org/wmmixer-alsa/%{name}-%{version}.tar.gz
 URL:		http://iznogood.bohemians.org/
-BuildRequires:	alsa-lib-devel
 BuildRequires:	XFree86-devel
+BuildRequires:	alsa-lib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -27,11 +27,14 @@ przerobionaa tak, by u¿ywa³a sterowników ALSA zamiast OSS.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/pixmaps}
+
 install wmmixer-alsa $RPM_BUILD_ROOT%{_bindir}
 install XPM/{icons,wmmixer}.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
