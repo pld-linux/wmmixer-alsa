@@ -25,8 +25,8 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/bin
-install -m0755 wmmixer-alsa $RPM_BUILD_ROOT/usr/bin
+install -d $RPM_BUILD_ROOT%{_bindir}
+install -m0755 wmmixer-alsa $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %attr(-,root,root) %doc COPYING README README.xamixer
-%attr(-,root,root) /usr/bin/wmmixer-alsa
+%attr(-,root,root) %{_bindir}/wmmixer-alsa
 
 %changelog
 
