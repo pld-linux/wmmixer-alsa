@@ -1,5 +1,5 @@
 Summary:	A hacked version of wmmixer to make it use ALSA
-Summary(pl.UTF-8):   Wersja wmmixer przerobiona tak, by używała ALSA
+Summary(pl.UTF-8):	Wersja wmmixer przerobiona tak, by używała ALSA
 Name:		wmmixer-alsa
 Version:	0.6
 Release:	1
