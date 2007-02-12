@@ -1,5 +1,5 @@
 Summary:	A hacked version of wmmixer to make it use ALSA
-Summary(pl):	Wersja wmmixer przerobiona tak, by uøywa≥a ALSA
+Summary(pl.UTF-8):   Wersja wmmixer przerobiona tak, by u≈ºywa≈Ça ALSA
 Name:		wmmixer-alsa
 Version:	0.6
 Release:	1
@@ -19,9 +19,9 @@ make it use ALSA (Advanced Linux Sound Architecture) in stead of the
 OSS sound drivers in the linux kernel. To compile and run this
 program, you will need to get alsa-driver and alsa-lib packages.
 
-%description -l pl
+%description -l pl.UTF-8
 Wersja wmmixera autorstwa Sama Hawkera (patrz README.wmmixer),
-przerobiona tak, by uøywa≥a sterownikÛw ALSA zamiast OSS.
+przerobiona tak, by u≈ºywa≈Ça sterownik√≥w ALSA zamiast OSS.
 
 %prep
 %setup -q
